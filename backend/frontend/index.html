@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f13f665eb0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Reading</title>
+</head>
+<body>
+    <div id="divLogIn">
+        <div class="container">
+            <img src="img/logo.svg" alt="logo">
+            <h1>MY READING</h1>
+            <form action="">
+                <div>
+                    <input id="inputLogInUsuario" type="text" placeholder="usuario">
+                    <input id="inputLogInContraseña" type="password" placeholder="contraseña">
+                </div>
+                <div>
+                    <input id="inputEntrar" type="button" value="ENTRAR">
+                    <input id="inputLogInRegistrarse" type="button" value="REGISTRARSE">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="divRegister">
+        <span id="spanBack"><i class="fas fa-arrow-left"></i></span>
+        <div class="container">
+            <img src="img/logo.svg" alt="logo">
+            <form action="">
+                <input class="register" id="inputRegNombre" type="text" placeholder="Nombre">
+                <input class="register" id="inputApellido" type="text" placeholder="Apellido">
+                <input class="register" id="inputEmail" type="email" placeholder="Email">
+                <input class="register" id="inputUsuario" type="text" placeholder="usuario">
+                <input class="register" id="inputContraseña" type="password" placeholder="contraseña">
+                <input class="register" id="inputRegistrarse" type="button" value="REGISTRARSE">
+            </form>
+        </div>
+    </div>
+    <div id="divContent">
+        <div id="divModal">
+            <div>
+                <span id="spanClose"><i class="far fa-times-circle"></i></span>
+                <form action="">
+                    <input id="inputNombre" type="text" placeholder="Nombre">
+                    <input id="inputAutor" type="text" placeholder="Autor">
+                    <div>
+                        <div>
+                            <input type="radio" name="categoría" id="inputModalQuieroLeer" value="Quiero Leer" checked>
+                            <label for="labelModalQuieroLeer">Quiero Leer</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="categoría" id="inputModalLeyendo" value="Leyendo">
+                            <label for="labelModalLeyendo">Leyendo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="categoría" id="inputModalLeido" value="Leído">
+                            <label for="labelModalLeido">Leído</label>
+                        </div>
+                    </div>
+                    <input id="inputModalAdd" type="button" value="AÑADIR">
+                </form>
+            </div>
+        </div>
+        <header>
+            <span id="spanLogOut"><i class="fas fa-sign-out-alt"></i></span>
+            <div class="container">
+                <div>
+                    <span><i class="fas fa-user-circle"></i></span>
+                    <h2 id="h2NombreApellido"></h2>
+                </div>
+                <form action="">
+                    <div>
+                        <input class="categoria" checked type="radio" name="categoría" id="inputTodo" value="Todo">
+                        <label for="inputTodo">Todo</label>
+                    </div>
+                    <div>
+                        <input class="categoria" type="radio" name="categoría" id="inputQuieroLeer" value="Quiero Leer">
+                        <label for="inputQuieroLeer">Quiero Leer</label>
+                    </div>
+                    <div>
+                        <input class="categoria" type="radio" name="categoría" id="inputLeyendo" value="Leyendo">
+                        <label for="inputLeyendo">Leyendo</label>
+                    </div>
+                    <div>
+                        <input class="categoria" type="radio" name="categoría" id="inputLeido" value="Leído">
+                        <label for="inputLeido">Leído</label>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <section class="container"></section>
+        <span id="spanAdd"><i class="fas fa-plus-circle"></i></span>
+    </div>
+    <script src="js/code.js"></script>
+</body>
+</html>
